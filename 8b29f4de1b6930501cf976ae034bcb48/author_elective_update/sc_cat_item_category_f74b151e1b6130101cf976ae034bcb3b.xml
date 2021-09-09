@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="New Integration Request">480b55da1b6130101cf976ae034bcbab</sc_cat_item>
+        <sc_category display_value="Applications-Technical Services">5ccad02c1b5930101cf976ae034bcb4a</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-07-26 19:31:22</sys_created_on>
+        <sys_id>f74b151e1b6130101cf976ae034bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Applications-Technical Services.New Integration Request</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name>sc_cat_item_category_f74b151e1b6130101cf976ae034bcb3b</sys_update_name>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-07-26 19:31:22</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</application>
+        <file_path/>
+        <instance_id>c383490ddb92b700387021c405961992</instance_id>
+        <instance_name>emcitizendev</instance_name>
+        <name>sc_cat_item_category_f74b151e1b6130101cf976ae034bcb3b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="New Integration Request">480b55da1b6130101cf976ae034bcbab</sc_cat_item><sc_category display_value="Applications-Technical Services">5ccad02c1b5930101cf976ae034bcb4a</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>SA\LDBMOLE</sys_created_by><sys_created_on>2021-07-26 19:31:22</sys_created_on><sys_id>f74b151e1b6130101cf976ae034bcb3b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Applications-Technical Services.New Integration Request</sys_name><sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package><sys_policy/><sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope><sys_update_name>sc_cat_item_category_f74b151e1b6130101cf976ae034bcb3b</sys_update_name><sys_updated_by>SA\LDBMOLE</sys_updated_by><sys_updated_on>2021-07-26 19:31:22</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1635615852</payload_hash>
+        <record_name>Applications-Technical Services.New Integration Request</record_name>
+        <reverted_from/>
+        <source>8729f4de1b6930501cf976ae034bcb4b</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-07-26 19:31:22</sys_created_on>
+        <sys_id>3f4b151e1b6130101cf976ae034bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ae44ce6750000001</sys_recorded_at>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-07-26 19:31:22</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>374b151e6e61301055ab85a542ce203e</update_guid>
+        <update_guid_history>374b151e6e61301055ab85a542ce203e:-1635615852</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Applications-Technical Services.New Integration Request">a62c177e1b2578101cf976ae034bcb1d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-07-28 18:11:19</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>60d3f6586b414a64ac1fcbe388fc4210</sys_id>
+        <sys_metadata>f74b151e1b6130101cf976ae034bcb3b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Applications-Technical Services.New Integration Request</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_scope_delete display_value="">237a44787603489b8bc6a071854b3909</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_f74b151e1b6130101cf976ae034bcb3b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_f74b151e1b6130101cf976ae034bcb3b">3f4b151e1b6130101cf976ae034bcb3e</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-07-28 18:11:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

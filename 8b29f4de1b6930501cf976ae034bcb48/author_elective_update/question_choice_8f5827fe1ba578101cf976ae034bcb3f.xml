@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref display_value="FTPS">e6236ffe1b6578101cf976ae034bcb06</published_ref>
+        <question display_value="Destination Protocol:">fe5827fe1ba578101cf976ae034bcb21</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-07-28 19:04:35</sys_created_on>
+        <sys_id>8f5827fe1ba578101cf976ae034bcb3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FTPS</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name>question_choice_8f5827fe1ba578101cf976ae034bcb3f</sys_update_name>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-07-28 19:04:35</sys_updated_on>
+        <text>FTPS</text>
+        <value>ftps</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=8f5827fe1ba578101cf976ae034bcb3f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</application>
+        <file_path/>
+        <instance_id>c383490ddb92b700387021c405961992</instance_id>
+        <instance_name>emcitizendev</instance_name>
+        <name>question_choice_8f5827fe1ba578101cf976ae034bcb3f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>200</order><published_ref display_value="FTPS">e6236ffe1b6578101cf976ae034bcb06</published_ref><question display_value="Destination Protocol:">fe5827fe1ba578101cf976ae034bcb21</question><sys_class_name>question_choice</sys_class_name><sys_created_by>SA\LDBMOLE</sys_created_by><sys_created_on>2021-07-28 19:04:35</sys_created_on><sys_id>8f5827fe1ba578101cf976ae034bcb3f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>FTPS</sys_name><sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package><sys_policy/><sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope><sys_update_name>question_choice_8f5827fe1ba578101cf976ae034bcb3f</sys_update_name><sys_updated_by>SA\LDBMOLE</sys_updated_by><sys_updated_on>2021-07-28 19:04:35</sys_updated_on><text>FTPS</text><value>ftps</value></question_choice><fx_price action="delete_multiple" query="id=8f5827fe1ba578101cf976ae034bcb3f"/></record_update>]]></payload>
+        <payload_hash>-272463557</payload_hash>
+        <record_name>FTPS</record_name>
+        <reverted_from/>
+        <source>8729f4de1b6930501cf976ae034bcb4b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-07-28 19:04:35</sys_created_on>
+        <sys_id>c35827fe1ba578101cf976ae034bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17aee81171d0000001</sys_recorded_at>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-07-28 19:04:35</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>0b5827fe2ea5781001e0f7b7dc3a3341</update_guid>
+        <update_guid_history>0b5827fe2ea5781001e0f7b7dc3a3341:-272463557</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="FTPS">520b237a1be578101cf976ae034bcbf6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-07-28 19:16:17</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>103129bdcbca45ecbe0a69148e86c464</sys_id>
+        <sys_metadata>8f5827fe1ba578101cf976ae034bcb3f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FTPS</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_parent display_value="">fe5827fe1ba578101cf976ae034bcb21</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_scope_delete display_value="">237a44787603489b8bc6a071854b3909</sys_scope_delete>
+        <sys_update_name>question_choice_8f5827fe1ba578101cf976ae034bcb3f</sys_update_name>
+        <sys_update_version display_value="question_choice_8f5827fe1ba578101cf976ae034bcb3f">c35827fe1ba578101cf976ae034bcb42</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-07-28 19:16:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

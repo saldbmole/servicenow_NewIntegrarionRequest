@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-quebec-12-09-2020__patch4-hotfix2-06-23-2021_06-23-2021_2133.zip</compiler_build>
+        <copied_from>38fce7fe1be578101cf976ae034bcb02</copied_from>
+        <copied_from_name>EDI - New Request Integration Fl</copied_from_name>
+        <description/>
+        <internal_name>copy_of_edi__new_request_integration_flow</internal_name>
+        <label_cache>[{"name":"c9ab4c47-baf2-4be6-9280-8d0ed814c03c.Catalog Task","label":"3➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a74e50ea-4bbe-43de-8b4f-3f20cee133cd.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a74e50ea-4bbe-43de-8b4f-3f20cee133cd.Record","label":"3➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"851f9bd0-5a2a-42ee-9ba0-2debf1bf80a7.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"1c0359b7-b857-4599-9ad0-a4fa14be35d8"}},{"name":"851f9bd0-5a2a-42ee-9ba0-2debf1bf80a7.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"42412b4a-9f50-4b4d-b266-e9dda0abd508"}},{"name":"851f9bd0-5a2a-42ee-9ba0-2debf1bf80a7.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id","uiUniqueId":"9508df24-ba07-40ab-b078-b995e35c6865"}},{"name":"851f9bd0-5a2a-42ee-9ba0-2debf1bf80a7.table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"Table Name","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name","uiUniqueId":"3d6a6989-076d-4c4a-94ae-06bcd951a7f7"}},{"name":"Service Catalog_1.request_item.correlation_id","label":"Trigger➛Requested Item Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"correlation_id"},{"name":"95e98bc2-d2ef-4ed7-8437-f5d4f0d3c699.Catalog Task","label":"2➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.observations","label":"1➛observations","reference":"","reference_display":"observations","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.additional_requests","label":"1➛additional_requests","reference":"","reference_display":"additional_requests","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_folder","label":"1➛destination_folder","reference":"","reference_display":"destination_folder","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_authentication_method","label":"1➛destination_authentication_method","reference":"","reference_display":"destination_authentication_method","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_protocol","label":"1➛destination_protocol","reference":"","reference_display":"destination_protocol","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_port","label":"1➛destination_port","reference":"","reference_display":"destination_port","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_ip","label":"1➛destination_ip","reference":"","reference_display":"destination_ip","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_server","label":"1➛destination_server","reference":"","reference_display":"destination_server","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_zone","label":"1➛destination_zone","reference":"","reference_display":"destination_zone","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_files","label":"1➛source_files","reference":"","reference_display":"source_files","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_folder_path","label":"1➛source_folder_path","reference":"","reference_display":"source_folder_path","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_authentication_method","label":"1➛source_authentication_method","reference":"","reference_display":"source_authentication_method","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_protocol","label":"1➛source_protocol","reference":"","reference_display":"source_protocol","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_port","label":"1➛source_port","reference":"","reference_display":"source_port","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_ip","label":"1➛source_ip","reference":"","reference_display":"source_ip","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_server","label":"1➛source_server","reference":"","reference_display":"source_server","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_zone","label":"1➛source_zone","reference":"","reference_display":"source_zone","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.scheduled_frequency","label":"1➛scheduled_frequency","reference":"","reference_display":"scheduled_frequency","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.scheduled_stop_time","label":"1➛scheduled_stop_time","reference":"","reference_display":"scheduled_stop_time","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.scheduled_start_time","label":"1➛scheduled_start_time","reference":"","reference_display":"scheduled_start_time","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.sunday","label":"1➛sunday","reference":"","reference_display":"sunday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.saturday","label":"1➛saturday","reference":"","reference_display":"saturday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.friday","label":"1➛friday","reference":"","reference_display":"friday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.thursday","label":"1➛thursday","reference":"","reference_display":"thursday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.wednesday","label":"1➛wednesday","reference":"","reference_display":"wednesday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.tuesday","label":"1➛tuesday","reference":"","reference_display":"tuesday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.monday","label":"1➛monday","reference":"","reference_display":"monday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.estimated_transference_size","label":"1➛estimated_transference_size","reference":"","reference_display":"estimated_transference_size","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.estimated_number_of_files","label":"1➛estimated_number_of_files","reference":"","reference_display":"estimated_number_of_files","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.file_encryprion","label":"1➛file_encryprion","reference":"","reference_display":"file_encryprion","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.data_flow","label":"1➛data_flow","reference":"","reference_display":"data_flow","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.job_description","label":"1➛job_description","reference":"","reference_display":"job_description","type":"html","base_type":"html","attributes":{"catalogType":"23","catalogTypeLabel":"HTML"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.department","label":"1➛department","reference":"","reference_display":"department","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.support_group","label":"1➛support_group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.requested_by","label":"1➛requested_by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"Service Catalog_1.request_item","label":"Trigger➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"e7282cc8-d9e7-4fcb-96b5-143596a7700e.record","label":"2➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7282cc8-d9e7-4fcb-96b5-143596a7700e.table_name","label":"2➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"baf56c4b-23cd-4261-9444-d54e91b5b2ed.Catalog Task","label":"3➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c08fe770-e3fc-48c4-8ad2-fe0ae6df4d9c.state","label":"4➛State","reference_display":"State","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"f2c16334-b954-4ed1-b784-fe127b33c7ef.record","label":"5➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f2c16334-b954-4ed1-b784-fe127b33c7ef.table_name","label":"5➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dee94c5f-767e-4746-88a7-fa2e0ce8215a.email","label":"6➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3701129d-4dc0-42dc-9b51-b4056cf41507.email","label":"3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Copy of EDI - New Request Integration Flow</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5602adec1bbd7c504a61ebd22a4bcb96</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Copy of EDI - New Request Integration Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name>sys_hub_flow_5602adec1bbd7c504a61ebd22a4bcb96</sys_update_name>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=5602adec1bbd7c504a61ebd22a4bcb96"/>
+    <sys_variable_value action="DELETE" query="document_key=5602adec1bbd7c504a61ebd22a4bcb96"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT INe602edec1bbd7c504a61ebd22a4bcb23"/>
+    <sys_hub_trigger_instance action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Copy of EDI - New Request Integration Flow">5602adec1bbd7c504a61ebd22a4bcb96</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>e602edec1bbd7c504a61ebd22a4bcb23</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="DELETE" query="document_key=e602edec1bbd7c504a61ebd22a4bcb23"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e602edec1bbd7c504a61ebd22a4bcb23</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>6602edec1bbd7c504a61ebd22a4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value>background</value>
+        <variable display_value="Run flow In">6090c72977203300f5bfcfcc78106159</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="DELETE" query="id=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT INde02adec1bbd7c504a61ebd22a4bcb97"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>5602adec1bbd7c504a61ebd22a4bcb96</id>
+        <name>Copy of EDI - New Request Integration Flow</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>de02adec1bbd7c504a61ebd22a4bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="DELETE" query="model=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT IN9e02adec1bbd7c504a61ebd22a4bcb9d,da02adec1bbd7c504a61ebd22a4bcbb1"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Copy of EDI - New Request Integration Flow">5602adec1bbd7c504a61ebd22a4bcb96</model>
+        <model_id>5602adec1bbd7c504a61ebd22a4bcb96</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>9e02adec1bbd7c504a61ebd22a4bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Copy of EDI - New Request Integration Flow">5602adec1bbd7c504a61ebd22a4bcb96</model>
+        <model_id>5602adec1bbd7c504a61ebd22a4bcb96</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>da02adec1bbd7c504a61ebd22a4bcbb1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="DELETE" query="flow=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT IN2a02edec1bbd7c504a61ebd22a4bcb0e,6602adec1bbd7c504a61ebd22a4bcbef,a202edec1bbd7c504a61ebd22a4bcb05,da02adec1bbd7c504a61ebd22a4bcbce,e602edec1bbd7c504a61ebd22a4bcb21"/>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <comment/>
+        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of EDI - New Request Integration Flow">5602adec1bbd7c504a61ebd22a4bcb96</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>2a02edec1bbd7c504a61ebd22a4bcb0e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <ui_id>c08fe770-e3fc-48c4-8ad2-fe0ae6df4d9c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=2a02edec1bbd7c504a61ebd22a4bcb0e"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2a02edec1bbd7c504a61ebd22a4bcb0e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>6602edec1bbd7c504a61ebd22a4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2a02edec1bbd7c504a61ebd22a4bcb0e</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>a202edec1bbd7c504a61ebd22a4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value>state=3^ORstate=4^ORstate=7</value>
+        <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=2a02edec1bbd7c504a61ebd22a4bcb0e"/>
+    <sys_element_mapping action="DELETE">
+        <field>conditions</field>
+        <id>2a02edec1bbd7c504a61ebd22a4bcb0e</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>6e02edec1bbd7c504a61ebd22a4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>2a02edec1bbd7c504a61ebd22a4bcb0e</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>aa02edec1bbd7c504a61ebd22a4bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>2a02edec1bbd7c504a61ebd22a4bcb0e</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>2202edec1bbd7c504a61ebd22a4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of EDI - New Request Integration Flow">5602adec1bbd7c504a61ebd22a4bcb96</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>6602adec1bbd7c504a61ebd22a4bcbef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <ui_id>e7282cc8-d9e7-4fcb-96b5-143596a7700e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=6602adec1bbd7c504a61ebd22a4bcbef"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6602adec1bbd7c504a61ebd22a4bcbef</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>6602adec1bbd7c504a61ebd22a4bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6602adec1bbd7c504a61ebd22a4bcbef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>a202adec1bbd7c504a61ebd22a4bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <value>stage=fulfillment^assignment_group={"display":"Application Integration and Scheduling-XTO MOVEit","value":"7006cba41bdd6410eea453de034bcb67"}</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=6602adec1bbd7c504a61ebd22a4bcbef"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>6602adec1bbd7c504a61ebd22a4bcbef</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>6e02adec1bbd7c504a61ebd22a4bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>6602adec1bbd7c504a61ebd22a4bcbef</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>aa02adec1bbd7c504a61ebd22a4bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>6602adec1bbd7c504a61ebd22a4bcbef</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>2202adec1bbd7c504a61ebd22a4bcbf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of EDI - New Request Integration Flow">5602adec1bbd7c504a61ebd22a4bcb96</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>a202edec1bbd7c504a61ebd22a4bcb05</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <ui_id>3701129d-4dc0-42dc-9b51-b4056cf41507</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=a202edec1bbd7c504a61ebd22a4bcb05"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a202edec1bbd7c504a61ebd22a4bcb05</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>2a02edec1bbd7c504a61ebd22a4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value>Teste</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a202edec1bbd7c504a61ebd22a4bcb05</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>6602edec1bbd7c504a61ebd22a4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a202edec1bbd7c504a61ebd22a4bcb05</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>a202edec1bbd7c504a61ebd22a4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a202edec1bbd7c504a61ebd22a4bcb05</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>ee02edec1bbd7c504a61ebd22a4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value>lucas.d.moletta@exxonmobil.com</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=a202edec1bbd7c504a61ebd22a4bcb05"/>
+    <sys_element_mapping action="DELETE">
+        <field>ah_body</field>
+        <id>a202edec1bbd7c504a61ebd22a4bcb05</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>2602edec1bbd7c504a61ebd22a4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;You`ve new WO assigned to you:&amp;nbsp;&lt;br /&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:66f9d77e-cb4e-49d5-b059-fabe3bb4dd9d}}"&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:66f9d77e-cb4e-49d5-b059-fabe3bb4dd9d}}"&gt;&lt;span class="data-pill-content-container"&gt;1&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;requested_by&lt;button id="transform_function_facade_66f9d77e-cb4e-49d5-b059-fabe3bb4dd9d" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:2b4c4e98-a293-4a50-86fb-69416114145b}}"&gt;&lt;span class="data-pill-content-container"&gt;1&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;job_description&lt;button id="transform_function_facade_2b4c4e98-a293-4a50-86fb-69416114145b" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:19bdfc90-6172-4176-94a2-840babf89157}}"&gt;&lt;span class="data-pill-content-container"&gt;1&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;additional_requests&lt;button id="transform_function_facade_19bdfc90-6172-4176-94a2-840babf89157" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>ah_subject</field>
+        <id>a202edec1bbd7c504a61ebd22a4bcb05</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>6e02edec1bbd7c504a61ebd22a4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>ah_to</field>
+        <id>a202edec1bbd7c504a61ebd22a4bcb05</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>6202edec1bbd7c504a61ebd22a4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>a202edec1bbd7c504a61ebd22a4bcb05</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>e602edec1bbd7c504a61ebd22a4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>a202edec1bbd7c504a61ebd22a4bcb05</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>aa02edec1bbd7c504a61ebd22a4bcb07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of EDI - New Request Integration Flow">5602adec1bbd7c504a61ebd22a4bcb96</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>da02adec1bbd7c504a61ebd22a4bcbce</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <ui_id>ea876420-bedd-4c46-bac1-df0c743e560d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=da02adec1bbd7c504a61ebd22a4bcbce"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>da02adec1bbd7c504a61ebd22a4bcbce</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>a602adec1bbd7c504a61ebd22a4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <value>ea5c5d9e1b6130101cf976ae034bcb49:item_option_new,30a19bba1ba178101cf976ae034bcb93:item_option_new,c68197ba1ba178101cf976ae034bcb74:item_option_new,c1546fb21ba578101cf976ae034bcb5e:item_option_new,06d1d3fa1ba178101cf976ae034bcb36:item_option_new,9242973e1ba178101cf976ae034bcbfe:item_option_new,8682d37e1ba178101cf976ae034bcbdd:item_option_new,9eb2df3e1ba178101cf976ae034bcbf5:item_option_new,b6d217be1ba178101cf976ae034bcb63:item_option_new,5a139fbe1ba178101cf976ae034bcbf9:item_option_new,5223d3fe1ba178101cf976ae034bcbfc:item_option_new,f93397fe1ba178101cf976ae034bcbdb:item_option_new,9e439bfe1ba178101cf976ae034bcbc6:item_option_new,8d535ffe1ba178101cf976ae034bcb0e:item_option_new,e863dffe1ba178101cf976ae034bcbe1:item_option_new,fc7393321be178101cf976ae034bcbc4:item_option_new,55a49ff21be178101cf976ae034bcb5c:item_option_new,7a751fb61be178101cf976ae034bcb59:item_option_new,3736137a1be178101cf976ae034bcbf9:item_option_new,c37697ba1be178101cf976ae034bcb68:item_option_new,48965bba1be178101cf976ae034bcb51:item_option_new,a5089fbe1be178101cf976ae034bcb63:item_option_new,24a69fba1be178101cf976ae034bcb5c:item_option_new,abd6d7fa1be178101cf976ae034bcbac:item_option_new,e937973e1be178101cf976ae034bcbb5:item_option_new,ef575f3e1be178101cf976ae034bcb75:item_option_new,a687177e1be178101cf976ae034bcbe4:item_option_new,afc7d3be1be178101cf976ae034bcb54:item_option_new,21e71bbe1be178101cf976ae034bcb9a:item_option_new,2718d3fe1be178101cf976ae034bcbde:item_option_new,47d2a3fe1b6578101cf976ae034bcb8c:item_option_new,c53323321ba578101cf976ae034bcb0e:item_option_new,4ef3e7321ba578101cf976ae034bcb9f:item_option_new,dd2467b21ba578101cf976ae034bcb49:item_option_new,fb34abb21ba578101cf976ae034bcb69:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>da02adec1bbd7c504a61ebd22a4bcbce</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>ea02adec1bbd7c504a61ebd22a4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <value>480b55da1b6130101cf976ae034bcbab</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=da02adec1bbd7c504a61ebd22a4bcbce"/>
+    <sys_element_mapping action="DELETE">
+        <field>catalog_variables</field>
+        <id>da02adec1bbd7c504a61ebd22a4bcbce</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>9a02adec1bbd7c504a61ebd22a4bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>requested_item</field>
+        <id>da02adec1bbd7c504a61ebd22a4bcbce</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>1602adec1bbd7c504a61ebd22a4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>template_catalog_item</field>
+        <id>da02adec1bbd7c504a61ebd22a4bcbce</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>5202adec1bbd7c504a61ebd22a4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="DELETE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of EDI - New Request Integration Flow">5602adec1bbd7c504a61ebd22a4bcb96</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>e602edec1bbd7c504a61ebd22a4bcb21</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <ui_id>f2c16334-b954-4ed1-b784-fe127b33c7ef</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="DELETE" query="document_key=e602edec1bbd7c504a61ebd22a4bcb21"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e602edec1bbd7c504a61ebd22a4bcb21</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>2202edec1bbd7c504a61ebd22a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value>stage=complete</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e602edec1bbd7c504a61ebd22a4bcb21</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>e202edec1bbd7c504a61ebd22a4bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=e602edec1bbd7c504a61ebd22a4bcb21"/>
+    <sys_element_mapping action="DELETE">
+        <field>record</field>
+        <id>e602edec1bbd7c504a61ebd22a4bcb21</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>ea02edec1bbd7c504a61ebd22a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>table_name</field>
+        <id>e602edec1bbd7c504a61ebd22a4bcb21</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>2a02edec1bbd7c504a61ebd22a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>values</field>
+        <id>e602edec1bbd7c504a61ebd22a4bcb21</id>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>ae02edec1bbd7c504a61ebd22a4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT IN6e02edec1bbd7c504a61ebd22a4bcb4b,e602edec1bbd7c504a61ebd22a4bcb4b,ee02edec1bbd7c504a61ebd22a4bcb4b"/>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>5602adec1bbd7c504a61ebd22a4bcb96</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{ea876420-bedd-4c46-bac1-df0c743e560d.requested_by}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>6e02edec1bbd7c504a61ebd22a4bcb4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>66f9d77e-cb4e-49d5-b059-fabe3bb4dd9d</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>5602adec1bbd7c504a61ebd22a4bcb96</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{ea876420-bedd-4c46-bac1-df0c743e560d.additional_requests}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>e602edec1bbd7c504a61ebd22a4bcb4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>19bdfc90-6172-4176-94a2-840babf89157</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>5602adec1bbd7c504a61ebd22a4bcb96</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{ea876420-bedd-4c46-bac1-df0c743e560d.job_description}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:06</sys_created_on>
+        <sys_id>ee02edec1bbd7c504a61ebd22a4bcb4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:06</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2b4c4e98-a293-4a50-86fb-69416114145b</ui_id>
+    </sys_hub_pill_compound>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT IN1602adec1bbd7c504a61ebd22a4bcbb0,9a02adec1bbd7c504a61ebd22a4bcbc7"/>
+    <sys_documentation action="DELETE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>1602adec1bbd7c504a61ebd22a4bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:05</sys_created_on>
+        <sys_id>9a02adec1bbd7c504a61ebd22a4bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</application>
+        <file_path/>
+        <instance_id>c383490ddb92b700387021c405961992</instance_id>
+        <instance_name>emcitizendev</instance_name>
+        <name>sys_hub_flow_5602adec1bbd7c504a61ebd22a4bcb96</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build&gt;glide-quebec-12-09-2020__patch4-hotfix2-06-23-2021_06-23-2021_2133.zip&lt;/compiler_build&gt;&lt;copied_from&gt;38fce7fe1be578101cf976ae034bcb02&lt;/copied_from&gt;&lt;copied_from_name&gt;EDI - New Request Integration Fl&lt;/copied_from_name&gt;&lt;description/&gt;&lt;internal_name&gt;copy_of_edi__new_request_integration_flow&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"c9ab4c47-baf2-4be6-9280-8d0ed814c03c.Catalog Task","label":"3➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a74e50ea-4bbe-43de-8b4f-3f20cee133cd.Table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a74e50ea-4bbe-43de-8b4f-3f20cee133cd.Record","label":"3➛Record","reference":"task","reference_display":"Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"851f9bd0-5a2a-42ee-9ba0-2debf1bf80a7.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"1c0359b7-b857-4599-9ad0-a4fa14be35d8"}},{"name":"851f9bd0-5a2a-42ee-9ba0-2debf1bf80a7.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"42412b4a-9f50-4b4d-b266-e9dda0abd508"}},{"name":"851f9bd0-5a2a-42ee-9ba0-2debf1bf80a7.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id","uiUniqueId":"9508df24-ba07-40ab-b078-b995e35c6865"}},{"name":"851f9bd0-5a2a-42ee-9ba0-2debf1bf80a7.table","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"Table Name","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name","uiUniqueId":"3d6a6989-076d-4c4a-94ae-06bcd951a7f7"}},{"name":"Service Catalog_1.request_item.correlation_id","label":"Trigger➛Requested Item Record➛Correlation ID","reference":"","reference_display":"Correlation ID","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"correlation_id"},{"name":"95e98bc2-d2ef-4ed7-8437-f5d4f0d3c699.Catalog Task","label":"2➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.observations","label":"1➛observations","reference":"","reference_display":"observations","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.additional_requests","label":"1➛additional_requests","reference":"","reference_display":"additional_requests","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_folder","label":"1➛destination_folder","reference":"","reference_display":"destination_folder","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_authentication_method","label":"1➛destination_authentication_method","reference":"","reference_display":"destination_authentication_method","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_protocol","label":"1➛destination_protocol","reference":"","reference_display":"destination_protocol","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_port","label":"1➛destination_port","reference":"","reference_display":"destination_port","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_ip","label":"1➛destination_ip","reference":"","reference_display":"destination_ip","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_server","label":"1➛destination_server","reference":"","reference_display":"destination_server","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.destination_zone","label":"1➛destination_zone","reference":"","reference_display":"destination_zone","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_files","label":"1➛source_files","reference":"","reference_display":"source_files","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_folder_path","label":"1➛source_folder_path","reference":"","reference_display":"source_folder_path","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_authentication_method","label":"1➛source_authentication_method","reference":"","reference_display":"source_authentication_method","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_protocol","label":"1➛source_protocol","reference":"","reference_display":"source_protocol","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_port","label":"1➛source_port","reference":"","reference_display":"source_port","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_ip","label":"1➛source_ip","reference":"","reference_display":"source_ip","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_server","label":"1➛source_server","reference":"","reference_display":"source_server","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.source_zone","label":"1➛source_zone","reference":"","reference_display":"source_zone","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.scheduled_frequency","label":"1➛scheduled_frequency","reference":"","reference_display":"scheduled_frequency","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.scheduled_stop_time","label":"1➛scheduled_stop_time","reference":"","reference_display":"scheduled_stop_time","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.scheduled_start_time","label":"1➛scheduled_start_time","reference":"","reference_display":"scheduled_start_time","type":"choice","base_type":"choice","attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.sunday","label":"1➛sunday","reference":"","reference_display":"sunday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.saturday","label":"1➛saturday","reference":"","reference_display":"saturday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.friday","label":"1➛friday","reference":"","reference_display":"friday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.thursday","label":"1➛thursday","reference":"","reference_display":"thursday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.wednesday","label":"1➛wednesday","reference":"","reference_display":"wednesday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.tuesday","label":"1➛tuesday","reference":"","reference_display":"tuesday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.monday","label":"1➛monday","reference":"","reference_display":"monday","type":"boolean","base_type":"boolean","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.estimated_transference_size","label":"1➛estimated_transference_size","reference":"","reference_display":"estimated_transference_size","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.estimated_number_of_files","label":"1➛estimated_number_of_files","reference":"","reference_display":"estimated_number_of_files","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.file_encryprion","label":"1➛file_encryprion","reference":"","reference_display":"file_encryprion","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.data_flow","label":"1➛data_flow","reference":"","reference_display":"data_flow","type":"choice","base_type":"choice","attributes":{"catalogType":"3","catalogTypeLabel":"Multiple Choice"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.job_description","label":"1➛job_description","reference":"","reference_display":"job_description","type":"html","base_type":"html","attributes":{"catalogType":"23","catalogTypeLabel":"HTML"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.department","label":"1➛department","reference":"","reference_display":"department","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.support_group","label":"1➛support_group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"ea876420-bedd-4c46-bac1-df0c743e560d.requested_by","label":"1➛requested_by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"Service Catalog_1.request_item","label":"Trigger➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"e7282cc8-d9e7-4fcb-96b5-143596a7700e.record","label":"2➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e7282cc8-d9e7-4fcb-96b5-143596a7700e.table_name","label":"2➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"baf56c4b-23cd-4261-9444-d54e91b5b2ed.Catalog Task","label":"3➛Catalog Task","reference":"sc_task","reference_display":"Catalog Task","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c08fe770-e3fc-48c4-8ad2-fe0ae6df4d9c.state","label":"4➛State","reference_display":"State","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"f2c16334-b954-4ed1-b784-fe127b33c7ef.record","label":"5➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f2c16334-b954-4ed1-b784-fe127b33c7ef.table_name","label":"5➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dee94c5f-767e-4746-88a7-fa2e0ce8215a.email","label":"6➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3701129d-4dc0-42dc-9b51-b4056cf41507.email","label":"3➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;name&gt;Copy of EDI - New Request Integration Flow&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:04&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of EDI - New Request Integration Flow&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="EDI" source="x_iem_edi"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_5602adec1bbd7c504a61ebd22a4bcb96&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5602adec1bbd7c504a61ebd22a4bcb96"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5602adec1bbd7c504a61ebd22a4bcb96"/&gt;&lt;sys_hub_trigger_instance action="delete_multiple" query="flow=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT INe602edec1bbd7c504a61ebd22a4bcb23"/&gt;&lt;sys_hub_trigger_instance action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of EDI - New Request Integration Flow"&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/flow&gt;&lt;name&gt;Service Catalog&lt;/name&gt;&lt;remote_sys_id/&gt;&lt;sys_class_name&gt;sys_hub_trigger_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e602edec1bbd7c504a61ebd22a4bcb23&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Service Catalog"&gt;c43a1011c36813002841b63b12d3ae15&lt;/trigger_definition&gt;&lt;trigger_inputs/&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;service_catalog&lt;/trigger_type&gt;&lt;/sys_hub_trigger_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e602edec1bbd7c504a61ebd22a4bcb23"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_trigger_instance&lt;/document&gt;&lt;document_key&gt;e602edec1bbd7c504a61ebd22a4bcb23&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6602edec1bbd7c504a61ebd22a4bcb24&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value&gt;background&lt;/value&gt;&lt;variable display_value="Run flow In"&gt;6090c72977203300f5bfcfcc78106159&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT INde02adec1bbd7c504a61ebd22a4bcb97"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/id&gt;&lt;name&gt;Copy of EDI - New Request Integration Flow&lt;/name&gt;&lt;sys_class_name&gt;sys_flow_cat_variable_model&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;de02adec1bbd7c504a61ebd22a4bcb97&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT IN9e02adec1bbd7c504a61ebd22a4bcb9d,da02adec1bbd7c504a61ebd22a4bcbb1"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Copy of EDI - New Request Integration Flow"&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/model&gt;&lt;model_id&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_req_item"&gt;sc_req_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;9e02adec1bbd7c504a61ebd22a4bcb9d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;sc_req_item&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Copy of EDI - New Request Integration Flow"&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/model&gt;&lt;model_id&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;true&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;da02adec1bbd7c504a61ebd22a4bcbb1&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_instance action="delete_multiple" query="flow=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT IN2a02edec1bbd7c504a61ebd22a4bcb0e,6602adec1bbd7c504a61ebd22a4bcbef,a202edec1bbd7c504a61ebd22a4bcb05,da02adec1bbd7c504a61ebd22a4bcbce,e602edec1bbd7c504a61ebd22a4bcb21"/&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Wait For Condition"&gt;89ce8a4187120010663ca1bb36cb0be3&lt;/action_type&gt;&lt;action_type_parent display_value="Wait For Condition"&gt;8bb9a8160b10030085c083eb37673aec&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;89ce8a4187120010663ca1bb36cb0be3&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of EDI - New Request Integration Flow"&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/flow&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;2a02edec1bbd7c504a61ebd22a4bcb0e&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;c08fe770-e3fc-48c4-8ad2-fe0ae6df4d9c&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=2a02edec1bbd7c504a61ebd22a4bcb0e"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;2a02edec1bbd7c504a61ebd22a4bcb0e&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6602edec1bbd7c504a61ebd22a4bcb1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value&gt;sc_req_item&lt;/value&gt;&lt;variable display_value="Table"&gt;45ce8a4187120010663ca1bb36cb0bea&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;2a02edec1bbd7c504a61ebd22a4bcb0e&lt;/document_key&gt;&lt;order&gt;3&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;a202edec1bbd7c504a61ebd22a4bcb1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value&gt;state=3^ORstate=4^ORstate=7&lt;/value&gt;&lt;variable display_value="Conditions"&gt;49ce8a4187120010663ca1bb36cb0bef&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=2a02edec1bbd7c504a61ebd22a4bcb0e"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;conditions&lt;/field&gt;&lt;id&gt;2a02edec1bbd7c504a61ebd22a4bcb0e&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6e02edec1bbd7c504a61ebd22a4bcb1c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;2a02edec1bbd7c504a61ebd22a4bcb0e&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;aa02edec1bbd7c504a61ebd22a4bcb1c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3&lt;/table&gt;&lt;value&gt;{{Service Catalog_1.request_item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;2a02edec1bbd7c504a61ebd22a4bcb0e&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;2202edec1bbd7c504a61ebd22a4bcb1d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of EDI - New Request Integration Flow"&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/flow&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;6602adec1bbd7c504a61ebd22a4bcbef&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;ui_id&gt;e7282cc8-d9e7-4fcb-96b5-143596a7700e&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6602adec1bbd7c504a61ebd22a4bcbef"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;6602adec1bbd7c504a61ebd22a4bcbef&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;6602adec1bbd7c504a61ebd22a4bcbf1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;value&gt;sc_req_item&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;6602adec1bbd7c504a61ebd22a4bcbef&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;a202adec1bbd7c504a61ebd22a4bcbf1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;value&gt;stage=fulfillment^assignment_group={"display":"Application Integration and Scheduling-XTO MOVEit","value":"7006cba41bdd6410eea453de034bcb67"}&lt;/value&gt;&lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=6602adec1bbd7c504a61ebd22a4bcbef"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;6602adec1bbd7c504a61ebd22a4bcbef&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;6e02adec1bbd7c504a61ebd22a4bcbf0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Service Catalog_1.request_item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;6602adec1bbd7c504a61ebd22a4bcbef&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;aa02adec1bbd7c504a61ebd22a4bcbf0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;6602adec1bbd7c504a61ebd22a4bcbef&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;2202adec1bbd7c504a61ebd22a4bcbf1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Send Email"&gt;c1806bf4a70323008299b39f087901cb&lt;/action_type&gt;&lt;action_type_parent display_value="Send Email"&gt;98c181d20b100300d97d8bf637673ab5&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c1806bf4a70323008299b39f087901cb&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of EDI - New Request Integration Flow"&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/flow&gt;&lt;order&gt;3&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;3701129d-4dc0-42dc-9b51-b4056cf41507&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a202edec1bbd7c504a61ebd22a4bcb05"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/document_key&gt;&lt;order&gt;6&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;2a02edec1bbd7c504a61ebd22a4bcb08&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value&gt;Teste&lt;/value&gt;&lt;variable display_value="Subject"&gt;5d806bf4a70323008299b39f087901ec&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6602edec1bbd7c504a61ebd22a4bcb08&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value&gt;sc_req_item&lt;/value&gt;&lt;variable display_value="Table"&gt;19806bf4a70323008299b39f087901d4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/document_key&gt;&lt;order&gt;7&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;a202edec1bbd7c504a61ebd22a4bcb08&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="Body"&gt;ad806bf4a70323008299b39f087901f2&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/document_key&gt;&lt;order&gt;3&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;ee02edec1bbd7c504a61ebd22a4bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value&gt;lucas.d.moletta@exxonmobil.com&lt;/value&gt;&lt;variable display_value="To"&gt;59806bf4a70323008299b39f087901da&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=a202edec1bbd7c504a61ebd22a4bcb05"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;ah_body&lt;/field&gt;&lt;id&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;2602edec1bbd7c504a61ebd22a4bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb&lt;/table&gt;&lt;value&gt;&amp;lt;p data-tinymcerootblock=""&amp;gt;You`ve new WO assigned to you:&amp;amp;nbsp;&amp;lt;br /&amp;gt;&amp;lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:66f9d77e-cb4e-49d5-b059-fabe3bb4dd9d}}"&amp;gt;&amp;lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:66f9d77e-cb4e-49d5-b059-fabe3bb4dd9d}}"&amp;gt;&amp;lt;span class="data-pill-content-container"&amp;gt;1&amp;lt;span class="data-pill-label-caret"&amp;gt;&amp;lt;span class="data-pill-label-arrow"&amp;gt;➛&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;requested_by&amp;lt;button id="transform_function_facade_66f9d77e-cb4e-49d5-b059-fabe3bb4dd9d" class="transform_function_facade no_transform_applied"&amp;gt;&amp;lt;span class="inline-script-icon"&amp;gt;&amp;lt;span style="display: none;"&amp;gt;​&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:2b4c4e98-a293-4a50-86fb-69416114145b}}"&amp;gt;&amp;lt;span class="data-pill-content-container"&amp;gt;1&amp;lt;span class="data-pill-label-caret"&amp;gt;&amp;lt;span class="data-pill-label-arrow"&amp;gt;➛&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;job_description&amp;lt;button id="transform_function_facade_2b4c4e98-a293-4a50-86fb-69416114145b" class="transform_function_facade no_transform_applied"&amp;gt;&amp;lt;span class="inline-script-icon"&amp;gt;&amp;lt;span style="display: none;"&amp;gt;​&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class="data_pill  accepts_transform_functions" contenteditable="false" data-pillvalue="{{fd_transform:19bdfc90-6172-4176-94a2-840babf89157}}"&amp;gt;&amp;lt;span class="data-pill-content-container"&amp;gt;1&amp;lt;span class="data-pill-label-caret"&amp;gt;&amp;lt;span class="data-pill-label-arrow"&amp;gt;➛&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;additional_requests&amp;lt;button id="transform_function_facade_19bdfc90-6172-4176-94a2-840babf89157" class="transform_function_facade no_transform_applied"&amp;gt;&amp;lt;span class="inline-script-icon"&amp;gt;&amp;lt;span style="display: none;"&amp;gt;​&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;ah_subject&lt;/field&gt;&lt;id&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6e02edec1bbd7c504a61ebd22a4bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;ah_to&lt;/field&gt;&lt;id&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6202edec1bbd7c504a61ebd22a4bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e602edec1bbd7c504a61ebd22a4bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb&lt;/table&gt;&lt;value&gt;{{Service Catalog_1.request_item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;a202edec1bbd7c504a61ebd22a4bcb05&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;aa02edec1bbd7c504a61ebd22a4bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Get Catalog Variables"&gt;330ba3abc31013002841b63b12d3aee8&lt;/action_type&gt;&lt;action_type_parent display_value="Get Catalog Variables"&gt;22f0b88cc3c632002841b63b12d3aeff&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;330ba3abc31013002841b63b12d3aee8&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of EDI - New Request Integration Flow"&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/flow&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;da02adec1bbd7c504a61ebd22a4bcbce&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;ea876420-bedd-4c46-bac1-df0c743e560d&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=da02adec1bbd7c504a61ebd22a4bcbce"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;da02adec1bbd7c504a61ebd22a4bcbce&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;a602adec1bbd7c504a61ebd22a4bcbd1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;value&gt;ea5c5d9e1b6130101cf976ae034bcb49:item_option_new,30a19bba1ba178101cf976ae034bcb93:item_option_new,c68197ba1ba178101cf976ae034bcb74:item_option_new,c1546fb21ba578101cf976ae034bcb5e:item_option_new,06d1d3fa1ba178101cf976ae034bcb36:item_option_new,9242973e1ba178101cf976ae034bcbfe:item_option_new,8682d37e1ba178101cf976ae034bcbdd:item_option_new,9eb2df3e1ba178101cf976ae034bcbf5:item_option_new,b6d217be1ba178101cf976ae034bcb63:item_option_new,5a139fbe1ba178101cf976ae034bcbf9:item_option_new,5223d3fe1ba178101cf976ae034bcbfc:item_option_new,f93397fe1ba178101cf976ae034bcbdb:item_option_new,9e439bfe1ba178101cf976ae034bcbc6:item_option_new,8d535ffe1ba178101cf976ae034bcb0e:item_option_new,e863dffe1ba178101cf976ae034bcbe1:item_option_new,fc7393321be178101cf976ae034bcbc4:item_option_new,55a49ff21be178101cf976ae034bcb5c:item_option_new,7a751fb61be178101cf976ae034bcb59:item_option_new,3736137a1be178101cf976ae034bcbf9:item_option_new,c37697ba1be178101cf976ae034bcb68:item_option_new,48965bba1be178101cf976ae034bcb51:item_option_new,a5089fbe1be178101cf976ae034bcb63:item_option_new,24a69fba1be178101cf976ae034bcb5c:item_option_new,abd6d7fa1be178101cf976ae034bcbac:item_option_new,e937973e1be178101cf976ae034bcbb5:item_option_new,ef575f3e1be178101cf976ae034bcb75:item_option_new,a687177e1be178101cf976ae034bcbe4:item_option_new,afc7d3be1be178101cf976ae034bcb54:item_option_new,21e71bbe1be178101cf976ae034bcb9a:item_option_new,2718d3fe1be178101cf976ae034bcbde:item_option_new,47d2a3fe1b6578101cf976ae034bcb8c:item_option_new,c53323321ba578101cf976ae034bcb0e:item_option_new,4ef3e7321ba578101cf976ae034bcb9f:item_option_new,dd2467b21ba578101cf976ae034bcb49:item_option_new,fb34abb21ba578101cf976ae034bcb69:item_option_new&lt;/value&gt;&lt;variable display_value="Catalog Variables"&gt;7b0ba3abc31013002841b63b12d3aef7&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;da02adec1bbd7c504a61ebd22a4bcbce&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;ea02adec1bbd7c504a61ebd22a4bcbea&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;value&gt;480b55da1b6130101cf976ae034bcbab&lt;/value&gt;&lt;variable display_value="Template Catalog Items and Variable Sets"&gt;bb0ba3abc31013002841b63b12d3aef1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=da02adec1bbd7c504a61ebd22a4bcbce"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;catalog_variables&lt;/field&gt;&lt;id&gt;da02adec1bbd7c504a61ebd22a4bcbce&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;9a02adec1bbd7c504a61ebd22a4bcbd0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;requested_item&lt;/field&gt;&lt;id&gt;da02adec1bbd7c504a61ebd22a4bcbce&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;1602adec1bbd7c504a61ebd22a4bcbd1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8&lt;/table&gt;&lt;value&gt;{{Service Catalog_1.request_item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;template_catalog_item&lt;/field&gt;&lt;id&gt;da02adec1bbd7c504a61ebd22a4bcbce&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;5202adec1bbd7c504a61ebd22a4bcbd1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_action_instance action="INSERT_OR_UPDATE"&gt;&lt;action_inputs/&gt;&lt;action_inputs/&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Copy of EDI - New Request Integration Flow"&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/flow&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e602edec1bbd7c504a61ebd22a4bcb21&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;ui_id&gt;f2c16334-b954-4ed1-b784-fe127b33c7ef&lt;/ui_id&gt;&lt;/sys_hub_action_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=e602edec1bbd7c504a61ebd22a4bcb21"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;e602edec1bbd7c504a61ebd22a4bcb21&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;2202edec1bbd7c504a61ebd22a4bcb23&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value&gt;stage=complete&lt;/value&gt;&lt;variable display_value="Fields"&gt;02d01916c31332002841b63b12d3aeee&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_instance&lt;/document&gt;&lt;document_key&gt;e602edec1bbd7c504a61ebd22a4bcb21&lt;/document_key&gt;&lt;order&gt;50&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e202edec1bbd7c504a61ebd22a4bcb23&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;value&gt;sc_req_item&lt;/value&gt;&lt;variable display_value="Table"&gt;b5d01916c31332002841b63b12d3aec9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=e602edec1bbd7c504a61ebd22a4bcb21"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;record&lt;/field&gt;&lt;id&gt;e602edec1bbd7c504a61ebd22a4bcb21&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;ea02edec1bbd7c504a61ebd22a4bcb22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value&gt;{{Service Catalog_1.request_item}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;table_name&lt;/field&gt;&lt;id&gt;e602edec1bbd7c504a61ebd22a4bcb21&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;2a02edec1bbd7c504a61ebd22a4bcb22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;values&lt;/field&gt;&lt;id&gt;e602edec1bbd7c504a61ebd22a4bcb21&lt;/id&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;ae02edec1bbd7c504a61ebd22a4bcb22&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT IN6e02edec1bbd7c504a61ebd22a4bcb4b,e602edec1bbd7c504a61ebd22a4bcb4b,ee02edec1bbd7c504a61ebd22a4bcb4b"/&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{ea876420-bedd-4c46-bac1-df0c743e560d.requested_by}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;6e02edec1bbd7c504a61ebd22a4bcb4b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;66f9d77e-cb4e-49d5-b059-fabe3bb4dd9d&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{ea876420-bedd-4c46-bac1-df0c743e560d.additional_requests}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;e602edec1bbd7c504a61ebd22a4bcb4b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;19bdfc90-6172-4176-94a2-840babf89157&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;5602adec1bbd7c504a61ebd22a4bcb96&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{ea876420-bedd-4c46-bac1-df0c743e560d.job_description}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:06&lt;/sys_created_on&gt;&lt;sys_id&gt;ee02edec1bbd7c504a61ebd22a4bcb4b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:06&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;2b4c4e98-a293-4a50-86fb-69416114145b&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96^sys_idNOT IN1602adec1bbd7c504a61ebd22a4bcbb0,9a02adec1bbd7c504a61ebd22a4bcbc7"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;1602adec1bbd7c504a61ebd22a4bcbb0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="EDI" source="x_iem_edi"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5602adec1bbd7c504a61ebd22a4bcb96&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;SA\LDBMOLE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-08-02 19:47:05&lt;/sys_created_on&gt;&lt;sys_id&gt;9a02adec1bbd7c504a61ebd22a4bcbc7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="EDI" source="x_iem_edi"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EDI"&gt;8b29f4de1b6930501cf976ae034bcb48&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;SA\LDBMOLE&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-08-02 19:47:05&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-436696969</payload_hash>
+        <record_name>Copy of EDI - New Request Integration Flow</record_name>
+        <reverted_from/>
+        <source>8729f4de1b6930501cf976ae034bcb4b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-02 19:47:07</sys_created_on>
+        <sys_id>f602edec1bbd7c504a61ebd22a4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b0867d34f0000001</sys_recorded_at>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-02 19:47:07</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>7e02edece8bd7c50baf9fb98ab3213a9</update_guid>
+        <update_guid_history>7e02edece8bd7c50baf9fb98ab3213a9:-436696969,1e02adecaebd7c50e5c582a8204c569b:-1927989224</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-19 19:03:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>12827e55f8fd4c4e88ddf1aec8943ca4</sys_id>
+        <sys_metadata>5602adec1bbd7c504a61ebd22a4bcb96</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of EDI - New Request Integration Flow</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_scope_delete display_value="">237a44787603489b8bc6a071854b3909</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_5602adec1bbd7c504a61ebd22a4bcb96</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_5602adec1bbd7c504a61ebd22a4bcb96">f602edec1bbd7c504a61ebd22a4bcbaa</sys_update_version>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-19 19:03:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

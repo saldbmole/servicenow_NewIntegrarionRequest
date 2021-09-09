@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="EDI - New Integration Request">480b55da1b6130101cf976ae034bcbab</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-07-28 19:16:03</sys_created_on>
+        <sys_id>c3fa6b3a1be578101cf976ae034bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EDI - New Integration Request.SNC External</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_c3fa6b3a1be578101cf976ae034bcbce</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-07-28 19:16:03</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</application>
+        <file_path/>
+        <instance_id>c383490ddb92b700387021c405961992</instance_id>
+        <instance_name>emcitizendev</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_c3fa6b3a1be578101cf976ae034bcbce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="EDI - New Integration Request">480b55da1b6130101cf976ae034bcbab</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2021-07-28 19:16:03</sys_created_on><sys_id>c3fa6b3a1be578101cf976ae034bcbce</sys_id><sys_mod_count>0</sys_mod_count><sys_name>EDI - New Integration Request.SNC External</sys_name><sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package><sys_policy/><sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_c3fa6b3a1be578101cf976ae034bcbce</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2021-07-28 19:16:03</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-258334947</payload_hash>
+        <record_name>EDI - New Integration Request.SNC External</record_name>
+        <reverted_from/>
+        <source>9206b7021b3130104a61ebd22a4bcbe4</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2021-08-07 22:24:35</sys_created_on>
+        <sys_id>1036a1cd1b823c901cf976ae034bcb28</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>17b22b7c8b80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>dc36a1cd3f823c90648f9dff4a7f7127</update_guid>
+        <update_guid_history>dc36a1cd3f823c90648f9dff4a7f7127:-258334947</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="EDI - New Integration Request.SNC External">5c36a1cd1b823c901cf976ae034bcb52</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-08-16 19:37:54</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>4565dc909a2e4b63994b4317d73ddf61</sys_id>
+        <sys_metadata>c3fa6b3a1be578101cf976ae034bcbce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EDI - New Integration Request.SNC External</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_parent display_value="EDI - New Integration Request">480b55da1b6130101cf976ae034bcbab</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_scope_delete display_value="">237a44787603489b8bc6a071854b3909</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_c3fa6b3a1be578101cf976ae034bcbce</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_c3fa6b3a1be578101cf976ae034bcbce">1036a1cd1b823c901cf976ae034bcb28</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-08-16 19:37:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

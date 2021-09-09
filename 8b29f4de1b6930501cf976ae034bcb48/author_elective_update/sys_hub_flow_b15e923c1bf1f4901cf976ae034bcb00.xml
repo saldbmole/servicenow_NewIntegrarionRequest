@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>new_edi_flow_teste</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>New EDI Flow Teste</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-03 18:49:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b15e923c1bf1f4901cf976ae034bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New EDI Flow Teste</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name>sys_hub_flow_b15e923c1bf1f4901cf976ae034bcb00</sys_update_name>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-03 18:49:02</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=b15e923c1bf1f4901cf976ae034bcb00"/>
+    <sys_variable_value action="DELETE" query="document_key=b15e923c1bf1f4901cf976ae034bcb00"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=b15e923c1bf1f4901cf976ae034bcb00^sys_idNOT INf15e167c1bf1f4901cf976ae034bcb9d"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>b15e923c1bf1f4901cf976ae034bcb00</id>
+        <name>New EDI Flow Teste</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-03 18:49:02</sys_created_on>
+        <sys_id>f15e167c1bf1f4901cf976ae034bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-03 18:49:02</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</application>
+        <file_path/>
+        <instance_id>c383490ddb92b700387021c405961992</instance_id>
+        <instance_name>emcitizendev</instance_name>
+        <name>sys_hub_flow_b15e923c1bf1f4901cf976ae034bcb00</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>new_edi_flow_teste</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><name>New EDI Flow Teste</name><natlang/><outputs/><remote_trigger_id/><run_as>system</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>SA\LDBMOLE</sys_created_by><sys_created_on>2021-08-03 18:49:02</sys_created_on><sys_domain>global</sys_domain><sys_id>b15e923c1bf1f4901cf976ae034bcb00</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New EDI Flow Teste</sys_name><sys_overrides/><sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package><sys_policy/><sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope><sys_update_name>sys_hub_flow_b15e923c1bf1f4901cf976ae034bcb00</sys_update_name><sys_updated_by>SA\LDBMOLE</sys_updated_by><sys_updated_on>2021-08-03 18:49:02</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=b15e923c1bf1f4901cf976ae034bcb00"/><sys_variable_value action="delete_multiple" query="document_key=b15e923c1bf1f4901cf976ae034bcb00"/><sys_flow_cat_variable_model action="delete_multiple" query="id=b15e923c1bf1f4901cf976ae034bcb00^sys_idNOT INf15e167c1bf1f4901cf976ae034bcb9d"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>b15e923c1bf1f4901cf976ae034bcb00</id><name>New EDI Flow Teste</name><sys_class_name>sys_flow_cat_variable_model</sys_class_name><sys_created_by>SA\LDBMOLE</sys_created_by><sys_created_on>2021-08-03 18:49:02</sys_created_on><sys_id>f15e167c1bf1f4901cf976ae034bcb9d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope><sys_update_name/><sys_updated_by>SA\LDBMOLE</sys_updated_by><sys_updated_on>2021-08-03 18:49:02</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>-112904539</payload_hash>
+        <record_name>New EDI Flow Teste</record_name>
+        <reverted_from/>
+        <source>8729f4de1b6930501cf976ae034bcb4b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-03 18:49:03</sys_created_on>
+        <sys_id>b55e167c1bf1f4901cf976ae034bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b0d5905b10000001</sys_recorded_at>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-03 18:49:03</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>bd5e167c24f1f490b0c04d2a4882d9a1</update_guid>
+        <update_guid_history>bd5e167c24f1f490b0c04d2a4882d9a1:-112904539</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-19 19:03:12</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>46fc015789c740848719260efe0865a4</sys_id>
+        <sys_metadata>b15e923c1bf1f4901cf976ae034bcb00</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New EDI Flow Teste</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_scope_delete display_value="">237a44787603489b8bc6a071854b3909</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_b15e923c1bf1f4901cf976ae034bcb00</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_b15e923c1bf1f4901cf976ae034bcb00">b55e167c1bf1f4901cf976ae034bcba2</sys_update_version>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-19 19:03:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

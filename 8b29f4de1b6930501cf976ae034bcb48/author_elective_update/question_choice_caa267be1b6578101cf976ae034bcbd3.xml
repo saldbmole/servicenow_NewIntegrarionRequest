@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>1600</order>
+        <published_ref display_value="15:00 PM">0c64dbb21be178101cf976ae034bcb7a</published_ref>
+        <question display_value="Scheduled Start Time (CST):">79a267be1b6578101cf976ae034bcb6f</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-07-28 18:39:40</sys_created_on>
+        <sys_id>caa267be1b6578101cf976ae034bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>15:00 PM</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name>question_choice_caa267be1b6578101cf976ae034bcbd3</sys_update_name>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-07-28 18:39:40</sys_updated_on>
+        <text>15:00 PM</text>
+        <value>15_00_pm</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=caa267be1b6578101cf976ae034bcbd3"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</application>
+        <file_path/>
+        <instance_id>c383490ddb92b700387021c405961992</instance_id>
+        <instance_name>emcitizendev</instance_name>
+        <name>question_choice_caa267be1b6578101cf976ae034bcbd3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>1600</order><published_ref display_value="15:00 PM">0c64dbb21be178101cf976ae034bcb7a</published_ref><question display_value="Scheduled Start Time (CST):">79a267be1b6578101cf976ae034bcb6f</question><sys_class_name>question_choice</sys_class_name><sys_created_by>SA\LDBMOLE</sys_created_by><sys_created_on>2021-07-28 18:39:40</sys_created_on><sys_id>caa267be1b6578101cf976ae034bcbd3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>15:00 PM</sys_name><sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package><sys_policy/><sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope><sys_update_name>question_choice_caa267be1b6578101cf976ae034bcbd3</sys_update_name><sys_updated_by>SA\LDBMOLE</sys_updated_by><sys_updated_on>2021-07-28 18:39:40</sys_updated_on><text>15:00 PM</text><value>15_00_pm</value></question_choice><fx_price action="delete_multiple" query="id=caa267be1b6578101cf976ae034bcbd3"/></record_update>]]></payload>
+        <payload_hash>1462575921</payload_hash>
+        <record_name>15:00 PM</record_name>
+        <reverted_from/>
+        <source>8729f4de1b6930501cf976ae034bcb4b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-07-28 18:39:40</sys_created_on>
+        <sys_id>02a267be1b6578101cf976ae034bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17aee6a48830000001</sys_recorded_at>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-07-28 18:39:40</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>46a267beaf6578107a9433277ae65ed5</update_guid>
+        <update_guid_history>46a267beaf6578107a9433277ae65ed5:1462575921</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="15:00 PM">1ec4ab361ba578101cf976ae034bcb8c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-07-28 18:48:58</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>7765a3dc1fb14dce8f9a0b1fc134d539</sys_id>
+        <sys_metadata>caa267be1b6578101cf976ae034bcbd3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>15:00 PM</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_parent display_value="">79a267be1b6578101cf976ae034bcb6f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_scope_delete display_value="">237a44787603489b8bc6a071854b3909</sys_scope_delete>
+        <sys_update_name>question_choice_caa267be1b6578101cf976ae034bcbd3</sys_update_name>
+        <sys_update_version display_value="question_choice_caa267be1b6578101cf976ae034bcbd3">02a267be1b6578101cf976ae034bcbd6</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-07-28 18:48:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
