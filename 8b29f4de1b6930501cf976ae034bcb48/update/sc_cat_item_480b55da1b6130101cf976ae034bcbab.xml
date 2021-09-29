@@ -55,22 +55,22 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <short_description/>
+        <short_description>Request of new Integration on MOVEit platform supported by the EDI team.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state>published</state>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>SA\LDBMOLE</sys_created_by>
-        <sys_created_on>2021-08-16 19:33:13</sys_created_on>
+        <sys_created_on>2021-09-16 12:52:05</sys_created_on>
         <sys_id>480b55da1b6130101cf976ae034bcbab</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>EDI - New Integration Request</sys_name>
         <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
         <sys_policy/>
         <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
         <sys_update_name>sc_cat_item_480b55da1b6130101cf976ae034bcbab</sys_update_name>
         <sys_updated_by>SA\LDBMOLE</sys_updated_by>
-        <sys_updated_on>2021-08-17 17:17:46</sys_updated_on>
+        <sys_updated_on>2021-09-20 12:19:12</sys_updated_on>
         <template/>
         <template_manager_roles/>
         <type>item</type>

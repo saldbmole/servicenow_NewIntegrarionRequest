@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="EDI - New Integration Request">480b55da1b6130101cf976ae034bcbab</sc_cat_item>
+        <sc_category display_value="Application Support">3b3438761b80b810eea453de034bcb97</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-17 17:17:46</sys_created_on>
+        <sys_id>51bf86d51b4e30d01cf976ae034bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Application Support.EDI - New Integration Request</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_update_name>sc_cat_item_category_51bf86d51b4e30d01cf976ae034bcb34</sys_update_name>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-17 17:17:46</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</application>
+        <file_path/>
+        <instance_id>c383490ddb92b700387021c405961992</instance_id>
+        <instance_name>emcitizendev</instance_name>
+        <name>sc_cat_item_category_51bf86d51b4e30d01cf976ae034bcb34</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="EDI - New Integration Request">480b55da1b6130101cf976ae034bcbab</sc_cat_item><sc_category display_value="Application Support">3b3438761b80b810eea453de034bcb97</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>SA\LDBMOLE</sys_created_by><sys_created_on>2021-08-17 17:17:46</sys_created_on><sys_id>51bf86d51b4e30d01cf976ae034bcb34</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Application Support.EDI - New Integration Request</sys_name><sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package><sys_policy/><sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope><sys_update_name>sc_cat_item_category_51bf86d51b4e30d01cf976ae034bcb34</sys_update_name><sys_updated_by>SA\LDBMOLE</sys_updated_by><sys_updated_on>2021-08-17 17:17:46</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1423171503</payload_hash>
+        <record_name>Application Support.EDI - New Integration Request</record_name>
+        <reverted_from/>
+        <source>e71c02591b0e30d01cf976ae034bcbe8</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>SA\LDBMOLE</sys_created_by>
+        <sys_created_on>2021-08-17 17:17:46</sys_created_on>
+        <sys_id>91bf86d51b4e30d01cf976ae034bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b551e7d5c0000001</sys_recorded_at>
+        <sys_updated_by>SA\LDBMOLE</sys_updated_by>
+        <sys_updated_on>2021-08-17 17:17:46</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>99bf86d5dd4e30d0fbe92a130dabed36</update_guid>
+        <update_guid_history>99bf86d5dd4e30d0fbe92a130dabed36:1423171503</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Application Support.EDI - New Integration Request">4d574dc91b6eb4501cf976ae034bcb3f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2021-09-10 13:54:27</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>21aeb6fe0a4542729afa318a06c6c1b1</sys_id>
+        <sys_metadata>51bf86d51b4e30d01cf976ae034bcb34</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Application Support.EDI - New Integration Request</sys_name>
+        <sys_package display_value="EDI" source="x_iem_edi">8b29f4de1b6930501cf976ae034bcb48</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EDI">8b29f4de1b6930501cf976ae034bcb48</sys_scope>
+        <sys_scope_delete display_value="">237a44787603489b8bc6a071854b3909</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_51bf86d51b4e30d01cf976ae034bcb34</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_51bf86d51b4e30d01cf976ae034bcb34">91bf86d51b4e30d01cf976ae034bcb37</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-09-10 13:54:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
